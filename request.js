@@ -5,10 +5,16 @@ const BOT_INVITE = 'https://discord.com/oauth2/authorize?client_id=7666317170785
 
 const VOTE = 'https://top.gg/bot/766631717078564886/vote'
 
+const STATUS = 'https://stats.uptimerobot.com/0OzXVf2wQ4'
+
 app.get('/invite', (req, res) => {
 	res.redirect(BOT_INVITE);
 });
 
 app.get('/vote', (req, res) => {
 	res.redirect(VOTE);
+});
+
+app.get('/status', (req, res) => {
+	res.redirect(STATUS);
 });
