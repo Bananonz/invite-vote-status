@@ -9,12 +9,15 @@ const STATUS = 'https://stats.uptimerobot.com/0OzXVf2wQ4'
 
 app.get('/invite', (req, res) => {
 	res.redirect(BOT_INVITE);
+	console.log("Redirectiong...")
 });
 
 app.get('/vote', (req, res) => {
 	res.redirect(VOTE);
+	console.log("Redirectiong...")
 });
 
 app.get('/status', (req, res) => {
 	res.redirect(STATUS);
+	console.log("Redirectiong...")
 });
